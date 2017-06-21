@@ -12,6 +12,7 @@ export class FarmComponent implements OnInit {
   serverCreationStatus = 'No server was created!';
   serverName = 'TestServer';
   serverCreated = false;
+  farm = ['Testserver'  , 'Testserver 2'];
 
   constructor() {
   	setTimeout(() => {
@@ -24,7 +25,9 @@ export class FarmComponent implements OnInit {
 
   }
   onCreateServer(){
+
   	this.serverCreated = true;
+  	this.farm.push(this.serverName);
   	this.serverCreationStatus = 'Server was created! Name is ' + this.serverName;
   }
 
