@@ -1,8 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
+  // selector: '[app-farm]',
+  // selector: '.app-farm',
   selector: 'app-farm',
-  templateUrl: './farm.component.html',
+  template: `
+  <app-server></app-server>
+  <app-server></app-server>`,
   styleUrls: ['./farm.component.css']
 })
 export class FarmComponent implements OnInit {
